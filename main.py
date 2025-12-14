@@ -18,14 +18,14 @@ Clubz = {
         "members": "22"
     },
     "Dance Club": {
-        "description": "A club for students who enjoy practicing and performing dance routines.",
+        "description": "Dance your heart away with dance club!",
         "meeting_time": "Tuesday 3:00 - 5:00 PM",
         "location": "Teatro Preciosa",
         "moderator": "Sir. Cases",
         "members": "50+"
     },
     "Communications Arts Club": {
-        "description": "A club dedicated to journalism, public speaking, and creative writing.",
+        "description": "For the artists, journalists, and public speaking, ComArts!",
         "meeting_time": "Wednesday 3:00 - 4:00 PM, Friday 3:00 - 4:00 PM",
         "location": "Room 406",
         "moderator": "Ms. Yannis",
@@ -70,7 +70,7 @@ Clubz = {
         "description": "Be social, and join SocSci Club!!",
         "meeting_time": "Tuesdays and Thursdays 3:00 - 4:00 PM",
         "location": "Room 409",
-        "moderator": "Sir. Roberto Lim",
+        "moderator": "Sir. Lim",
         "members": "18"
     },
 }
