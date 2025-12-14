@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+    <title>OBMC-FV Club Information</title>
+
+    <style>
+        .contai {
+            width: 900px;   
+            length: 550px;        
+            margin: 20px auto;         
+            border: 2px solid black;   
+            border-radius: 10px;     
+            background-color: rgba(168, 168, 168, 0.7);  
+            text-align: center;      
+            font-family: 'Pixelify Sans', sans-serif; 
+        }
+
+        #ski {
+            font-size: 45px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        #clubSelect {
+            font-size: 30px;  
+            padding: 12px 20px; 
+            width: 350px; 
+            margin-bottom: 20px;
+            border-radius: 15px;
+            border: 2px solid rgba(0,0,0,0.3);
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+        #showBtn {
+            font-size: 30px;
+            padding: 12px 30px;
+            cursor: pointer;
+            border-radius: 15px;
+            border: 2px solid rgba(0,0,0,0.3);
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+        body {
+            font-family: 'Pixelify Sans', sans-serif;
+            background-image: url('https://images6.alphacoders.com/126/thumb-1920-1268195.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contai">
+        <center>
+                  <br>
+            <label for="clubSelect" id="ski">OBMC-FV Club Information Assistant!</label>
+            <h1 style="font-size:10px">------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h1>
+ <br>
+            <h1 style="font-size:25px">Hello there and good day! Welcome to the OBMC-FV Club Information Assistant! Here, you'll know everything you need to know about OBMC-FV's clubs!</h1>
+            <br><br>
+            <select id="clubSelect">
+                <option value="">-- Choose a club --</option>
+                <option value="Math Club">Math Club</option>
+                <option value="Science Club">Science Club</option>
+                <option value="Dance Club">Dance Club</option>
+                <option value="Communications Arts Club">Communications Arts Club</option>
+                <option value="Basketball Varsity">Basketball Varsity</option>
+                <option value="Marching Band Club">Marching Band Club</option>
+                <option value="Volleyball Varsity">Volleyball Varsity</option>
+                <option value="COCC Club">COCC Club</option>
+                <option value="Glee Club">Glee Club</option>
+                <option value="Social Science Club">Social Science Club</option>
+            </select>
+     <br><br>
+            <!-- use py-click without parentheses -->
+            <button id="showBtn" py-click="show_info">Show Club Information</button>
+ <br><br><br>
+            <div id="output"></div>
+            <br>
+
+            <py-script src="main.py"></py-script>
+        </center>
+    </div>
+</body>
+</html>
